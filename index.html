@@ -172,12 +172,8 @@
       </br>
         <h2 class="title is-3 has-text-centered">Abstract</h2>
         <div class="column has-text-justified">
-          <p> Recently, 3D Gaussian Splatting (3DGS) has achieved significant performance on indoor surface reconstruction and open-vocabulary segmentation. 
-            This paper presents GLS, a unified framework of surface reconstruction and open-vocabulary segmentation based on 3DGS. 
-            GLS extends two fields by exploring the correlation between them. For indoor surface reconstruction, we introduce surface normal prior as a geometric cue to guide the rendered normal, and use the normal error to optimize the rendered depth. 
-            For open-vocabulary segmentation, we employ 2D CLIP features to guide instance features and utilize DEVA masks to enhance their view consistency. 
-            Extensive experiments demonstrate the effectiveness of jointly optimizing surface reconstruction and open-vocabulary segmentation, where GLS surpasses state-of-the-art approaches of each task on
-             <a href="https://github.com/TUTvision/MuSHRoom">MuSHRoom</a>, <a href="https://github.com/scannetpp/scannetpp">ScanNet++</a>, and <a href="https://github.com/minghanqin/LangSplat">LERF-OVS</a> datasets.
+          <p> Recently, 3D Gaussian Splatting (3DGS) has achieved impressive performance on indoor surface reconstruction and 3D open-vocabulary segmentation. This paper presents GLS, a unified framework of 3D surface reconstruction and open-vocabulary segmentation based on 3DGS. GLS extends two fields by improving their sharpness and smoothness. For indoor surface reconstruction, we introduce surface normal prior as a geometric cue to guide the rendered normal, and use the normal error to optimize the rendered depth. For 3D open-vocabulary segmentation, we employ 2D CLIP features to guide instance features and enhance the surface smoothness, then utilize DEVA masks to maintain their view consistency. Extensive experiments demonstrate the effectiveness of jointly optimizing surface reconstruction and 3D open-vocabulary segmentation, where GLS surpasses state-of-the-art approaches of each task on 
+            <a href="https://github.com/TUTvision/MuSHRoom">MuSHRoom</a>, <a href="https://github.com/scannetpp/scannetpp">ScanNet++</a>, and <a href="https://github.com/minghanqin/LangSplat">LERF-OVS</a> datasets.
           </p>
         </div>
         </div>
@@ -193,7 +189,7 @@
       <div class="column">
         <h2 class="title is-3 has-text-centered">Method Overview</h2>
         <div class="column has-text-justified">
-          <image src="./images/pipeline.png" width="100%"></image>
+          <image src="./images/pipn.PNG" width="100%"></image>
           <br>
           <br>
           <p>Given multi-view RGB images captured by a camera in an indoor scene, our goal is to jointly reconstruct the scene and open-vocabulary objects. To achieve this goal, we introduce GLS, a novel framework based on 3DGS. As shown in~\figref{fig:pip}, our framework consists of three procedures. 
@@ -299,14 +295,14 @@
                   <span style="background-color: #F1CCB1;">Left:</span> "I want to wash my hands" </span>
                   <span style="background-color: #F1CCB1;">Right:</span> "I want to store my ice cream" </span> </p>
               </center>
-              <br>
+              <!-- <br>
                 <div class="item">
                     <div class="video">
                         <video id="inputVideo_r2" muted autoplay="autoplay" loop="loop" width="100%">
                             <source src="./images/demo_ic.mp4" type="video/mp4">
                         </video> 
                     </div>
-                    </div>                                        
+                    </div>                                         -->
             </div>
             
           </div>
@@ -386,12 +382,12 @@
                 <div class="content has-text-justified">
                     <div class="item">
                         <div class="image">
-                          <image src="./images/quanti.png" width="100%"></image>
+                          <image src="./images/quanti0.PNG" width="100%"></image>
                         </div>
-                        <br>
+                        <!-- <br>
                         <div class="image">
                           <image src="./images/quanti2.png" width="100%"></image>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
               </div>
@@ -399,7 +395,7 @@
 
         <center>
           <p>
-            Compared to previous methods on 3D open-vocabulary segmentation (Dataset: LERF-OVS).
+            Compared to previous methods on 3D open-vocabulary segmentation.
           </p>
           </center><br>
 
